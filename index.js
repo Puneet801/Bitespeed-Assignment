@@ -60,7 +60,7 @@ const updateContactLinkedId = async (id, linkedId) => {
 };
 
 app.get("/", async (req, res) => {
-  return res.render("Welcome to Bitespeed Assignment");
+  return res.send("Welcome to Bitespeed Assignment");
 });
 
 app.post("/identify", async (req, res) => {
