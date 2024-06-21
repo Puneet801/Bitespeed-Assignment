@@ -59,6 +59,10 @@ const updateContactLinkedId = async (id, linkedId) => {
   await db.run(query, [linkedId, id]);
 };
 
+app.get("/", async (req, res) => {
+  return res.render("Welcome to Bitespeed Assignment");
+});
+
 app.post("/identify", async (req, res) => {
   const { phoneNumber, email } = req.body;
 
